@@ -104,7 +104,7 @@ The theory originates from the question of solving polynomials. We know all abou
 \[
 x=\sqrt[3]{-\frac{q}{2}+\sqrt{\frac{q^2}{4}+\frac{p^3}{27}}}+\sqrt[3]{-\frac{q}{2}+\sqrt{\frac{q^2}{4}-\frac{p^3}{27}}}.
 \]
-A quartic equation is also solvable (meaning we can write down a general formula for its roots) but the formula takes too many pages so it's ommitted here.
+A quartic equation is also solvable (meaning we can write down a general formula for its roots) but the formula takes too many pages so it's omitted here.
 
 It turned out that quintics are not solvable. The genius of Galois was this big new idea: associate to a polynomial a certain finite group (which was a concept invented by Galois as well), now called the Galois group. Consider a field $K$ (an abelian group for addition and multiplication (without 0)) and
 \[
@@ -112,7 +112,7 @@ It turned out that quintics are not solvable. The genius of Galois was this big 
 \]
 the set of automorphisms of $K$, which is a group under composition.
 
-The case for $K=\Q$ is simple since any $g\in\Aut(\Q)$ respects $1$ and any element in $\Q$ is $\frac{r}{s}=\frac{\overbrace{1+\cdots+1}^r}{\underbrace{1+\cdots+1}_s}$, hence $\Aut(\Q)=\{\id\}$. The case for e.g. $\Aut(\Q(\sqrt 2))$ where $\Q(\sqrt 2)=\{a+b\sqrt 2:a,b\in\Q\}$ is a bit more intersting. Consider $\sqrt2$ as the solution to $x^2-2=0$. Since $g\in\Aut(\Q(\sqrt 2))$ respects addition and multiplication, one has $g(x)^2-2=0$, hence either $\sqrt 2\mapsto\sqrt 2$ (then $g=\id$) or $\sqrt 2\mapsto-\sqrt 2$. We claim that $\Aut(\Q(\sqrt 2))\cong\Z/2$ and we will later see some formal and general justification. In this case, we say the Galois group of $x^2-2$ is $\Z/2$.
+The case for $K=\Q$ is simple since any $g\in\Aut(\Q)$ respects $1$ and any element in $\Q$ is $\frac{r}{s}=\frac{\overbrace{1+\cdots+1}^r}{\underbrace{1+\cdots+1}_s}$, hence $\Aut(\Q)=\{\id\}$. The case for e.g. $\Aut(\Q(\sqrt 2))$ where $\Q(\sqrt 2)=\{a+b\sqrt 2:a,b\in\Q\}$ is a bit more interesting. Consider $\sqrt2$ as the solution to $x^2-2=0$. Since $g\in\Aut(\Q(\sqrt 2))$ respects addition and multiplication, one has $g(x)^2-2=0$, hence either $\sqrt 2\mapsto\sqrt 2$ (then $g=\id$) or $\sqrt 2\mapsto-\sqrt 2$. We claim that $\Aut(\Q(\sqrt 2))\cong\Z/2$ and we will later see some formal and general justification. In this case, we say the Galois group of $x^2-2$ is $\Z/2$.
 
 In general, if $f(x)$ is a polynomial of degree $n$ over a field, its Galois group is a subgroup of $S_n$. It turns out that if an equation is solvable by radicals then its Galois group is solvable, i.e. $G$ has a chain of subgroups $G=G_0\supset G_1\supset G_2\supset\cdots$ such that $G_i$ is a normal subgroup of $G_{i-1}$ and $G_{i-1}/G_i$ is cyclic. In particular, every cyclic group if solvable. $S_3$ is solvable since $S_3\supset\{e,(123),(132)\}\cong\Z/3\supset\{e\}$. $S_4$ is too, but $S_5$ is not; recall that the only nontrivial proper normal subgroup of $S_n$ is $A_n$ for $n\geq 5$ and $A_n$ is simple for $n\geq 5$. Quintics are therefore not generally solvable since there are some quintics with Galois group $S_5$.
 
@@ -144,7 +144,7 @@ $\Aut(K)=\Emb(K,K)$ is the set of embeddings of $K$ into itself, i.e. \textit{au
 \textit{A higher-level definition}: there is a unique ring homomorphism $f:\Z\rightarrow R$ since $\Z=(1)$ and $f(1)=1$. Since $\Z$ is a PID, $\ker f=(p)$ for some $p\in\Z$. We call $p$ the \textit{characteristic} of $R$.
 \end{defn}
 \begin{example}
-All finite fields have posiitve characteristic, but also $\F_p(t):=\left\{\frac{\sum a_it^i}{\sum b_jt^j}:a_i\in\F_p,b_j\in F_p\right\}$. In some way one can think of $\F_p$ as the smallest field with characteristic $p$ and any field containing it will have the same $\Char$, similarly for $\Q$ with $\Char\Q=0$.
+All finite fields have positive characteristic, but also $\F_p(t):=\left\{\frac{\sum a_it^i}{\sum b_jt^j}:a_i\in\F_p,b_j\in F_p\right\}$. In some way one can think of $\F_p$ as the smallest field with characteristic $p$ and any field containing it will have the same $\Char$, similarly for $\Q$ with $\Char\Q=0$.
 \end{example}
 
 \subsection{Finite extensions}
@@ -501,7 +501,7 @@ For a finite field extension $L\supset K$, define its \textit{separable degree} 
 
 \begin{remark}[Why did we define this horrible thing?]
 \label{remark:motivationSepdeg}
-Suppose $f\in K[x]$ is irreducible and let $a$ be a root of $f$. Let $M$ be any field extension of $K$, then one has $\Emb_K(K(a),M)=\{b\in M:f(b)=0\}$. In otherwords, $[K(a):K]_s=\#\{\text{roots of }f\text{ in its splitting field}\}$, which would be precisely $\deg f=[K(a):K]$ is $f$ is separable.
+Suppose $f\in K[x]$ is irreducible and let $a$ be a root of $f$. Let $M$ be any field extension of $K$, then one has $\Emb_K(K(a),M)=\{b\in M:f(b)=0\}$. In other words, $[K(a):K]_s=\#\{\text{roots of }f\text{ in its splitting field}\}$, which would be precisely $\deg f=[K(a):K]$ is $f$ is separable.
 \end{remark}
 
 \begin{thm}[Tower law for separable degrees]
@@ -1225,7 +1225,7 @@ F\ar[r]^{\Frob_p} & F
 \begin{proof}
 Claim 1: As a group under addition, $R\cong\Z^r$ for some $r$ by the structure of finitely generated abelian groups.
 
-Indeed, since $f(\lambda_i)=0$, $\lambda_i^n$ is a $\Z$-linear combination of $1,\lambda_i,\ldots,\lambda_i^{n-1}$, so every monomial $\lambda_1^{a_1}\cdots\lambda_n^{a_n}$ is a $\Z$-linear combination of monomials with $a_1\leq n-1$. Hence the abeian group $R$ is finitely generated. Moreover, $R$ is torsion-free as a subring of $K$, a field of characteristic 0.
+Indeed, since $f(\lambda_i)=0$, $\lambda_i^n$ is a $\Z$-linear combination of $1,\lambda_i,\ldots,\lambda_i^{n-1}$, so every monomial $\lambda_1^{a_1}\cdots\lambda_n^{a_n}$ is a $\Z$-linear combination of monomials with $a_1\leq n-1$. Hence the abelian group $R$ is finitely generated. Moreover, $R$ is torsion-free as a subring of $K$, a field of characteristic 0.
 
 Claim 2: A $\Z$-basis $u_1,\ldots,u_d$ of $R$ is also a basis of the $\Q$-vector space $K$.
 
